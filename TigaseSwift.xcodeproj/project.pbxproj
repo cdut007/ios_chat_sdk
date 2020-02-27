@@ -51,7 +51,6 @@
 		FE2EFDCC1CC2A27E000D254E /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2EFDCB1CC2A27E000D254E /* libxml2.tbd */; };
 		FE2EFE201CC417D9000D254E /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EFE1F1CC417D9000D254E /* XMLParser.swift */; };
 		FE3024241CDD1C6B00466497 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3024231CDD1C6B00466497 /* Delay.swift */; };
-		FE3024261CDD1F6500466497 /* DelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3024251CDD1F6500466497 /* DelayTests.swift */; };
 		FE30242C1CDDF52400466497 /* XmppStanzaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE30242B1CDDF52400466497 /* XmppStanzaFilter.swift */; };
 		FE30242E1CDDF53500466497 /* StreamManagementModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE30242D1CDDF53500466497 /* StreamManagementModule.swift */; };
 		FE3024351CE20C2300466497 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3024341CE20C2300466497 /* Crypto.swift */; };
@@ -60,7 +59,6 @@
 		FE3DCCEA1FE14A85008B6C8B /* SslCertificateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DCCE91FE14A85008B6C8B /* SslCertificateValidator.swift */; };
 		FE3DCCEC1FE158D7008B6C8B /* SslCertificateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DCCEB1FE158D7008B6C8B /* SslCertificateInfo.swift */; };
 		FE3F33D71CA1CBB9001A5CD6 /* TigaseSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3F33D61CA1CBB9001A5CD6 /* TigaseSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE3F33E31CA1CBB9001A5CD6 /* TigaseSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F33E21CA1CBB9001A5CD6 /* TigaseSwiftTests.swift */; };
 		FE3F33EE1CA1CDFC001A5CD6 /* XMPPStreamDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F33ED1CA1CDFC001A5CD6 /* XMPPStreamDelegate.swift */; };
 		FE3F33F01CA1CE22001A5CD6 /* XmppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F33EF1CA1CE22001A5CD6 /* XmppModule.swift */; };
 		FE3F33F41CA1CE8E001A5CD6 /* XMPPDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F33F31CA1CE8E001A5CD6 /* XMPPDelegate.swift */; };
@@ -205,7 +203,6 @@
 		FE2EFDCB1CC2A27E000D254E /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		FE2EFE1F1CC417D9000D254E /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		FE3024231CDD1C6B00466497 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
-		FE3024251CDD1F6500466497 /* DelayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayTests.swift; sourceTree = "<group>"; };
 		FE30242B1CDDF52400466497 /* XmppStanzaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmppStanzaFilter.swift; sourceTree = "<group>"; };
 		FE30242D1CDDF53500466497 /* StreamManagementModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamManagementModule.swift; sourceTree = "<group>"; };
 		FE3024341CE20C2300466497 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
@@ -218,8 +215,6 @@
 		FE3F33D61CA1CBB9001A5CD6 /* TigaseSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TigaseSwift.h; sourceTree = "<group>"; };
 		FE3F33D81CA1CBB9001A5CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE3F33DD1CA1CBB9001A5CD6 /* TigaseSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TigaseSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE3F33E21CA1CBB9001A5CD6 /* TigaseSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TigaseSwiftTests.swift; sourceTree = "<group>"; };
-		FE3F33E41CA1CBB9001A5CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE3F33ED1CA1CDFC001A5CD6 /* XMPPStreamDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPStreamDelegate.swift; sourceTree = "<group>"; };
 		FE3F33EF1CA1CE22001A5CD6 /* XmppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmppModule.swift; sourceTree = "<group>"; };
 		FE3F33F31CA1CE8E001A5CD6 /* XMPPDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPDelegate.swift; sourceTree = "<group>"; };
@@ -459,7 +454,6 @@
 				FE2EFDCB1CC2A27E000D254E /* libxml2.tbd */,
 				FE2EFD621CB29B28000D254E /* libresolv.tbd */,
 				FE3F33D51CA1CBB9001A5CD6 /* TigaseSwift */,
-				FE3F33E11CA1CBB9001A5CD6 /* TigaseSwiftTests */,
 				FE3F33D41CA1CBB9001A5CD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -510,16 +504,6 @@
 				FE87C772228485AB00B0B64C /* StreamLogger.swift */,
 			);
 			path = TigaseSwift;
-			sourceTree = "<group>";
-		};
-		FE3F33E11CA1CBB9001A5CD6 /* TigaseSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				FE3F33E21CA1CBB9001A5CD6 /* TigaseSwiftTests.swift */,
-				FE3F33E41CA1CBB9001A5CD6 /* Info.plist */,
-				FE3024251CDD1F6500466497 /* DelayTests.swift */,
-			);
-			path = TigaseSwiftTests;
 			sourceTree = "<group>";
 		};
 		FE752D5F1DA50D35006884B9 /* pep */ = {
@@ -956,8 +940,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE3F33E31CA1CBB9001A5CD6 /* TigaseSwiftTests.swift in Sources */,
-				FE3024261CDD1F6500466497 /* DelayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1118,7 +1100,7 @@
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/CommonCrypto";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1158,7 +1140,7 @@
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/CommonCrypto";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

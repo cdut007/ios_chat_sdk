@@ -111,8 +111,8 @@ extension Message {
 
 extension Chat {
     
-    open func createMessage(_ body:String, type:StanzaType = StanzaType.chat, subject:String? = nil, chatState: ChatState?, additionalElements:[Element]? = nil) -> Message {
-        let msg = self.createMessage(body, type: type, subject: subject, additionalElements: additionalElements);
+    open func createMessage(_ body:String, type:StanzaType = StanzaType.chat,mechanism:String? = nil,session:String? = nil,uuid:String? = nil, subject:String? = nil, chatState: ChatState?, additionalElements:[Element]? = nil) -> Message {
+        let msg = self.createMessage(body, type: type,mechanism:mechanism, session:session,uuid:uuid, subject: subject, additionalElements: additionalElements);
         
         if (chatState != nil) {
             msg.chatState = chatState;

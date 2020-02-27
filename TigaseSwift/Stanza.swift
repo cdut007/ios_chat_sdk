@@ -301,6 +301,26 @@ open class Message: Stanza {
         }
     }
     
+  
+    open var mechanism:String? {
+           get {
+            return element.getAttribute("mechanism");
+           }
+           set {
+               element.setAttribute("mechanism", value: newValue);
+           }
+       }
+    
+    open var session:String? {
+           get {
+               return element.getAttribute("session");
+           }
+           set {
+               element.setAttribute( "session", value: newValue);
+           }
+       }
+   
+    
     /// Message thread id
     open var thread:String? {
         get {

@@ -23,7 +23,6 @@ import Foundation
 
 /**
  Module responsible for [session establishment] process.
- 
  [session establishment]: http://xmpp.org/rfcs/rfc3921.html#session
  */
 open class SessionEstablishmentModule: Logger, XmppModule, ContextAware {

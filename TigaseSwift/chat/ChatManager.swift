@@ -126,9 +126,12 @@ open class Chat: ChatProtocol {
      - parameter subject: subject of message
      - parameter additionalElements: additional elements to add to message
      */
-    open func createMessage(_ body:String, type:StanzaType = StanzaType.chat, subject:String? = nil, additionalElements:[Element]? = nil) -> Message {
+    open func createMessage(_ body:String, type:StanzaType = StanzaType.chat,mechanism:String? = nil,session:String? = nil,uuid:String? = nil, subject:String? = nil, additionalElements:[Element]? = nil) -> Message {
         let msg = Message();
         msg.to = jid;
+        msg.id = uuid;
+        msg.session = session;
+        msg.mechanism = mechanism;
         msg.type = type;
         msg.thread = thread;
         msg.body = body;

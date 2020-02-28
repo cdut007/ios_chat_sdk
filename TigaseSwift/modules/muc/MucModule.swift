@@ -439,6 +439,10 @@ open class MucModule: Logger, XmppModule, ContextAware, Initializable, EventHand
         
         let room:Room! = roomsManager.getRoom(for: roomJid);
         guard room != nil else {
+            let timestamp = message.delay?.stamp ?? Date();
+            let room = Room(context: context, roomJid: roomJid, nickname: nickname ?? "unknown_call");
+             log("Message while not found room:", roomJid, " with nickname:", nickname);
+              context.eventBus.fire(MessageReceivedEvent(sessionObject: context.sessionObject, message: message, room: room, nickname: nickname, timestamp: timestamp));
             return;
         }
         

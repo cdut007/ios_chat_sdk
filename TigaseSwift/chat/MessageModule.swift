@@ -99,7 +99,7 @@ open class MessageModule: XmppModule, ContextAware, Initializable {
      - parameter subject: subject of message
      - parameter additionalElements: array of additional elements to add to message
      */
-    open func sendMessage(in chat:Chat, body:String, type:StanzaType = StanzaType.chat,mechanism:String? = nil,session:String? = nil,uuid:String=UUID().uuidString, subject:String? = nil, additionalElements:[Element]? = nil) -> Message {
+    open func sendMessage(in chat:Chat, body:String, type:StanzaType = StanzaType.chat,mechanism:String? = nil,session:String? = nil,uuid:String? = nil, subject:String? = nil, additionalElements:[Element]? = nil) -> Message {
         let msg = chat.createMessage(body, type: type,mechanism:mechanism, session:session,uuid:uuid,subject: subject, additionalElements: additionalElements);
         context.writer?.write(msg);
         return msg;

@@ -142,4 +142,21 @@ open class Chat: ChatProtocol {
         
         return msg;
     }
+    
+    open func createBroadcast(_ body:String, type:StanzaType = StanzaType.chat,mechanism:String? = nil,session:String? = nil,uuid:String? = nil, subject:String? = nil, additionalElements:[Element]? = nil) -> Message {
+        let msg = Message();
+        msg.to = jid;
+        msg.id = uuid;
+        msg.session = session;
+        msg.mechanism = mechanism;
+        msg.type = type;
+        msg.thread = thread;
+        msg.broadcast = body;
+        msg.subject = subject;
+        if additionalElements != nil {
+            msg.addChildren(additionalElements!);
+        }
+        
+        return msg;
+    }
 }

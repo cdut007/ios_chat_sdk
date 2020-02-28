@@ -120,4 +120,15 @@ extension Chat {
         
         return msg;
     }
+    
+    open func createBroadcast(_ body:String, type:StanzaType = StanzaType.chat,mechanism:String? = nil,session:String? = nil,uuid:String? = nil, subject:String? = nil, chatState: ChatState?, additionalElements:[Element]? = nil) -> Message {
+           let msg = self.createBroadcast(body, type: type,mechanism:mechanism, session:session,uuid:uuid, subject: subject, additionalElements: additionalElements);
+           
+           if (chatState != nil) {
+               msg.chatState = chatState;
+           }
+           
+           return msg;
+       }
+    
 }

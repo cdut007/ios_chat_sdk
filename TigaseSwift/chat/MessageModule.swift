@@ -105,6 +105,12 @@ open class MessageModule: XmppModule, ContextAware, Initializable {
         return msg;
     }
     
+    open func sendBroadcast(in chat:Chat, body:String, type:StanzaType = StanzaType.chat,mechanism:String? = nil,session:String? = nil,uuid:String=UUID().uuidString, subject:String? = nil, additionalElements:[Element]? = nil) -> Message {
+        let msg = chat.createBroadcast(body, type: type,mechanism:mechanism, session:session,uuid:uuid,subject: subject, additionalElements: additionalElements);
+        context.writer?.write(msg);
+        return msg;
+    }
+    
     func fire(_ event:Event) {
         context.eventBus.fire(event);
     }

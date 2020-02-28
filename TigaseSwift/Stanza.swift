@@ -291,6 +291,15 @@ open class Message: Stanza {
         }
     }
     
+    open var broadcast:String? {
+           get {
+               return getElementValue(name: "broadcast");
+           }
+           set {
+               setElementValue(name: "broadcast", value: newValue);
+           }
+       }
+    
     /// Message subject
     open var subject:String? {
         get {
